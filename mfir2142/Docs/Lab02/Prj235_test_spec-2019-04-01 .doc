@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testspec Prj235 - msir2144_BBT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj235<br>Test Suite: Prj235 - msir2144_BBT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 01/04/2019</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>
+	Testing project for group 235.</p></div>
+ <br/><h1 class='doclevel'>Test Suite : msir2144_BBT</h1>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj235-56: TestCaseECPValid</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Input data : adaugaIntrebare(&quot;Cine?&quot;, &quot;1) a&quot;, &quot;2) b&quot;, &quot;3) c&quot;, &quot;2&quot;, &quot;Domeniu&quot;)</span></p>
+<p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Output data( expected) : Intrebarea a fost adaugata cu succes!</span></p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p>
+	Enunt intrebare :</p>
+<ul>
+	<li>
+		&nbsp;&nbsp; prima litera este majuscula</li>
+	<li>
+		&nbsp; &nbsp;ultimul caracter este &#39;?&#39;</li>
+	<li>
+		&nbsp; &nbsp;lungimea enuntului : [2, 99]</li>
+</ul>
+<p>
+	Varianta corecta :</p>
+<ul>
+	<li>
+		e unul din caracterele &#39;1&#39;, &#39;2&#39; sau &#39;3&#39;</li>
+</ul>
+<p>
+	Varianta 1, 2 sau 3</p>
+<ul>
+	<li>
+		incepe cu 1, 2 sau 3 urmat de &#39;)&#39;</li>
+	<li>
+		lungimea variantei : [2, 49]</li>
+</ul>
+<p>
+	Domeniul</p>
+<ul>
+	<li>
+		prima litera este majuscula</li>
+	<li>
+		lungimea domeniului : [1, 29]</li>
+</ul>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">msir2144_F01:  msir2144_F01<br /></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj235-57: TestCaseBVAValid</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Input data : adaugaIntrebare(&quot;C?&quot;, &quot;1) a&quot;, &quot;2) b&quot;, &quot;3) c&quot;, &quot;2&quot;, &quot;D&quot;)</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Output data( expected) : Intrebarea a fost adaugata cu succes!</span></p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p style="margin-top: 0px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Enunt intrebare :</p>
+<ul style="margin: 1em 40px; list-style-position: outside; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<li>
+		&nbsp;&nbsp; prima litera este majuscula</li>
+	<li>
+		&nbsp; &nbsp;ultimul caracter este &#39;?&#39;</li>
+	<li>
+		&nbsp; &nbsp;lungimea enuntului : [2, 99]</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Varianta corecta :</p>
+<ul style="margin: 1em 40px; list-style-position: outside; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<li>
+		e unul din caracterele &#39;1&#39;, &#39;2&#39; sau &#39;3&#39;</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Varianta 1, 2 sau 3</p>
+<ul style="margin: 1em 40px; list-style-position: outside; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<li>
+		incepe cu 1, 2 sau 3 urmat de &#39;)&#39;</li>
+	<li>
+		lungimea variantei : [2, 49]</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Domeniul</p>
+<ul style="margin: 1em 40px; list-style-position: outside; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<li>
+		prima litera este majuscula</li>
+	<li>
+		lungimea domeniului : [1, 29]</li>
+</ul>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">msir2144_F01:  msir2144_F01<br /></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj235-58: TestCaseECPNonValid</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin-top: 0px;">
+	<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Input data : adaugaIntrebare(&quot;cine este?&quot;, &quot;1) a&quot;, &quot;2) b&quot;, &quot;3) c&quot;, &quot;2&quot;, &quot;D&quot;)</span></p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Output data( expected) : Prima litera din enunt nu este majuscula!</span></p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin-top: 0px;">
+	Enunt intrebare :</p>
+<ul style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin: 1em 40px; list-style-position: outside;">
+	<li>
+		&nbsp;&nbsp; prima litera este majuscula</li>
+	<li>
+		&nbsp; &nbsp;ultimul caracter este &#39;?&#39;</li>
+	<li>
+		&nbsp; &nbsp;lungimea enuntului : [2, 99]</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Varianta corecta :</p>
+<ul style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin: 1em 40px; list-style-position: outside;">
+	<li>
+		e unul din caracterele &#39;1&#39;, &#39;2&#39; sau &#39;3&#39;</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Varianta 1, 2 sau 3</p>
+<ul style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin: 1em 40px; list-style-position: outside;">
+	<li>
+		incepe cu 1, 2 sau 3 urmat de &#39;)&#39;</li>
+	<li>
+		lungimea variantei : [2, 49]</li>
+</ul>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	Domeniul</p>
+<ul style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin: 1em 40px; list-style-position: outside;">
+	<li>
+		prima litera este majuscula</li>
+	<li>
+		lungimea domeniului : [1, 29]</li>
+</ul>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">msir2144_F01:  msir2144_F01<br /></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj235-59: TestCaseBVANonValid</th></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238); margin-top: 0px;">
+	<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Input data : adaugaIntrebare(&quot;Oare cine?&quot;, &quot;1) a&quot;, &quot;2) b&quot;, &quot;3) c&quot;, &quot;2&quot;, &quot;&quot;)</span></p>
+<p>
+	&nbsp;</p>
+<p style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">
+	<span style="margin: 0px; padding: 0px; font-size: 11.7px;">Output data( expected) : Domeniul este vid!</span></p>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><table class="simple" style="border-width: thin; border-style: solid; border-color: black; background: rgb(238, 238, 238); font-size: 11.7px; margin: 5px; width: 1319px; font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif;">
+	<tbody>
+		<tr>
+			<td class="bold" colspan="5" style="font-weight: bold; vertical-align: top;">
+				Preconditions</td>
+		</tr>
+		<tr>
+			<td colspan="5" style="vertical-align: top;">
+				<p style="margin-top: 0px; font-size: 11.7px;">
+					Enunt intrebare :</p>
+				<ul style="margin: 1em 40px; list-style-position: outside; font-size: 11.7px;">
+					<li>
+						&nbsp;&nbsp; prima litera este majuscula</li>
+					<li>
+						&nbsp; &nbsp;ultimul caracter este &#39;?&#39;</li>
+					<li>
+						&nbsp; &nbsp;lungimea enuntului : [2, 99]</li>
+				</ul>
+				<p style="font-size: 11.7px;">
+					Varianta corecta :</p>
+				<ul style="margin: 1em 40px; list-style-position: outside; font-size: 11.7px;">
+					<li>
+						e unul din caracterele &#39;1&#39;, &#39;2&#39; sau &#39;3&#39;</li>
+				</ul>
+				<p style="font-size: 11.7px;">
+					Varianta 1, 2 sau 3</p>
+				<ul style="margin: 1em 40px; list-style-position: outside; font-size: 11.7px;">
+					<li>
+						incepe cu 1, 2 sau 3 urmat de &#39;)&#39;</li>
+					<li>
+						lungimea variantei : [2, 49]</li>
+				</ul>
+				<p style="font-size: 11.7px;">
+					Domeniul</p>
+				<ul style="margin: 1em 40px; list-style-position: outside; font-size: 11.7px;">
+					<li>
+						prima litera este majuscula</li>
+					<li>
+						lungimea domeniului : [1, 29]</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">msir2144_F01:  msir2144_F01<br /></td></tr>
+</table>
+</div>
+
+</body>
+</html>
